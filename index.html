@@ -3,10 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./normalize.css">
     <link rel="stylesheet" href="./style.css">
     <title>Library</title>
 </head>
 <body>
+    
+    <div class="container">
+        <div class="header">
+            <div class="header-title">My Library</div>
+            <button class="new-book">+ New Book
+        </div>
+        <dialog>
+        
+            <form>
+                <button class="close">×</button>
+                <div>
+                    <label for="title">Title *</label>
+                    <input type="text" id="title" name="title" required>
+                </div>
+                <div>
+                    <label for="title">Author *</label>
+                    <input type="text" id="author" name="author" required>
+                </div>
+                <div>
+                    <label for="pages">Pages *</label>
+                    <input type="number" id="pages" name="pages" required>
+                </div>
+                <div>
+                    <label for="read">Read</label>
+                    <input type="checkbox" id="read" name="read">
+                </div>
+                <button type="submit" class="add-book">Add book</button>
+            </form>
+        </dialog>
+        
+        <div class="library">
+            <div class="read-container">
+                <div class="container-title">Completed</div>
+                <div class="read-books"></div>
+            </div>
+            <div class="not-read-container">
+                <div class="container-title">To read</div>
+                <div class="not-read-books"></div>
+            </div>
+        </div>
+    </div>
+    
     <script src="./script.js"></script>
 </body>
 </html>
