@@ -1,10 +1,12 @@
 * {
     font-family: Roboto, Arial, sans-serif;
+    color: #112D4E;
 }
 
 body {
     margin: 0;
     min-height: 100vh;
+    background-color: #F9F7F7;
 }
 
 
@@ -13,12 +15,13 @@ body {
     justify-content: space-between;
     align-self: center;
     padding: 30px;
-    background-color: rgb(179, 206, 232);
+    background-color: #DBE2EF;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.16);
 }
 
 .library {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 30px;
     padding: 30px;
 }
@@ -37,8 +40,8 @@ body {
 button {
     appearance: none;
     border: none;
-    background-color: black;
-    color: white;
+    background-color: #112D4E;
+    color: #F9F7F7;
     border-radius: 8px;
     padding: 10px 20px;
 }
@@ -47,10 +50,10 @@ button {
     display: flex;
     flex-direction: column;
     background-color: #ffffff;
-    border: black solid 2px;
     border-radius: 8px;
     padding: 10px;
     font-size: 16px;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.16);
 }
 
 .book-info {
